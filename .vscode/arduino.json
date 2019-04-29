@@ -1,0 +1,6 @@
+{
+    "board": "arduino:avr:uno",
+    "port": "COM16",
+    "programmer": "AVRISP mkII",
+    "sketch": "TX avec encod.ino"
+}
