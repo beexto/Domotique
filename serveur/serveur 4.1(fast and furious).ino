@@ -228,24 +228,24 @@ void menu_reglage()
   
     case 1 :
       if (reglage==R_r)
-      reglage=Rh_alarm;
-      else if (reglage<Rh_alarm)
-      reglage=Rtemp_max;
-      else if (reglage>Rtemp_max)
         reglage=Rh_alarm;
+      else if (reglage<Rh_alarm)
+          reglage=Rtemp_max;
+      else if (reglage>Rtemp_max)
+          reglage=Rh_alarm;
       if (select==0)
-      reglage=R_r;
+        reglage=R_r;
     break ;
 
     case 2 : 
      if (reglage==R_r)
-      reglage=Rh_nuit;
-      else if (reglage<Rh_nuit)
-      reglage=Rlum;
-      else if (reglage>Rlum)
         reglage=Rh_nuit;
+      else if (reglage<Rh_nuit)
+          reglage=Rlum;
+      else if (reglage>Rlum)
+          reglage=Rh_nuit;
       if (select==0)
-      reglage=R_r;
+        reglage=R_r;
     break ;
   
   }
@@ -253,9 +253,6 @@ void menu_reglage()
 //==================================pour decider quoi faire selon menu et bouton pressé
 void bouton()
 {
-  if (getPressedButton()!=BUTTON_NONE)
-    modif=millis();
-
   switch(getPressedButton())
   {
     case BUTTON_LEFT :
